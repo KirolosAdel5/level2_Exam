@@ -364,7 +364,8 @@ li.fb a::before {
   display: block;
   width: 100%;
   position: relative;
-  background-color: #ffb37b;
+  background-color: rgba(255, 179, 123, 0.9);
+
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -426,19 +427,27 @@ li.fb a::before {
 	  margin-right: -0px;
 	  height: 100%;
 	}
+  .example h1 {
+    font-size: 80px;
+  }
 }
-@media screen and (max-width:799px){
-  .custom-model-inner{    position: relative;
-    margin: 0 auto;
-    top: 35%;}
-    .the-form [type="text"],
-  .the-form [type="text"]{
-width: 100%;
+@media screen and (max-width:600px){
+	.custom-model-main:before {
+    font-size: 10px;
+    top: 20%;
+	  content: "";
+	  display: inline-block;
+	  height: auto;
+	  vertical-align: middle;
+	  margin-right: -0px;
+	  height: 100%;
+  
+	}
+  .example h1 {
+    font-size: px;
+  }
 }
-.the-form label{
-  text-align: right;
-}
-}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 
 .circle{
   width: 50px;
