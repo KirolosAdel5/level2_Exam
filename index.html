@@ -1,468 +1,111 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتجة اعدادة خدام</title>
+    <link rel="icon" href="./assets/images/paper.png">
+    <link rel="stylesheet" href="./assets/css/style-with-prefix.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+
+<body style="  margin: 0;
+padding: 0;
+color: #222222;
+background-color: #f2f2f0;
+background-color: #56385a;
+background-image: url('./assets/images/cover.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+padding: 20px;
+overflow-x: hidden;">
+
+    <div class="main-container">
+        <div class="form-container">
+            <div class="form-body">              
+                    <h2 class="title">نتيجة الاختبار الثانى</h2>
+                    <h2 class="title">لاعداد خدام</h2>
+
+                <br>
+                <div style="text-align: center;">
+                    <img src="./assets/images/paper.png" width="200" height="" >
+                </div><!-- SOCIAL LOGIN -->
 
 
-body,
-input,
-button {
-  font-family: "Muli", sans-serif, -apple-system, BlinkMacSystemFont,
-    "Helvetica Neue", Helvetica, sans-serif;
-  outline: none;
-}
+            
+                <form action="" class="the-form">
 
-.main-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
+                    <label for="name" >الاسم</label>
+                    <input type="text" name="name" id="name" placeholder="مثال : كيرلس عادل" style="text-align: right;">
+                        <label for="code">رقم الجلوس</label>
+                    <input type="text" name="code" id="code" placeholder="مثال : 190" style="text-align: right;">
+                    <section>
+                        <div class="rt-container">
+                              <div class="col-rt-12">
+                                  <div class="Scriptcontent">
+                                  
+                                <!-- Message Box HTML -->
+                                <div class="Click-here" id="smt-btn">عرض النتيجة</div>        
+                                <div class="custom-model-main">
+                        <div class="custom-model-inner">        
+                        <div class="close-btn">×</div>
+                            <div class="custom-model-wrap">
+                                <div class="pop-up-content-wrap">
+                                    <h2 id="verse" style="color: rgb(71 40 14);text-align: center;font-size:150%;"></h2>
+                                    <h2 style="text-align: center;color:#1e141f;font-size:150%">درجتك فى ليفل 1 هي</h2>
+                                    <div class="heading">
+                                        <!-- <h1>Your Result</h1> -->
+                                        <div class="result" id="res" style="color: #1e141f;"></div>
+                                    </div>
+                                    <h2  class="example" style="text-align: center;color:#1e141f;font-size:150%">درجتك فى ليفل 2 هي</h2>
+                                    <div class="heading">
+                                        <!-- <h1>Your Result</h1> -->
+                                        <div class="result" id="res2" style="color: #1e141f;"></div>
+                                    </div>                                    
+                                    <h2 style="text-align: center;color:#1e141f;font-size:150%">درجتك فى ليفل 3 هي</h2>
+                                    <div class="heading">
+                                        <!-- <h1>Your Result</h1> -->
+                                        <div class="result" id="res3" style="color: #1e141f;"></div>
+                                    </div>
+                                   <p style="text-align: center;color: #1e141f;" id="thx"></p>
+                                   <button type="button" class="btn btn-danger" style="width: 49%;padding: 13px 16px;float:left"><span class="glyphicon glyphicon-remove"></span> Close</button>
+                                   <button type="button" class="btn btn-success" style="width: 49%;padding: 13px 16px">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+                                  </svg> هل يوجد مشكلة؟ </button>
 
-a {
-  color: inherit;
-  outline: none;
-  text-decoration: none;
-}
+                                </div>
+                            </div>  
+                        </div>  
+                        <div class="bg-overlay"></div>
+                    </div>
+                                      <!-- End Message Box HTML -->
+                               
+                                </div>
+                            </div>
+                        </div>
+                    </section>    
+                </form>
+                
+            </div><!-- FORM BODY-->
 
-a:hover {
-  text-decoration: underline;
-}
+        </div><!-- FORM CONTAINER -->
+    </div>
+        <!-- jQuery -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
-.form-container {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-.form-body {
-  background-color: #4a304d;
-  overflow: hidden;
-  padding: 50px;
-  color: #ffffff;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-@media only screen and (max-width: 500px) {
-  .form-body {
-    padding: 40px 30px;
-  }
-}
-
-@media only screen and (max-width: 455px) {
-  .form-body {
-    padding: 35px 20px;
-  }
-}
-
-@media only screen and (max-width: 340px) {
-  .form-body {
-    padding: 20px 10px;
-  }
-}
-
-.form-body .title {
-  margin: 0;
-  text-align: center;
-  font-weight: normal;
-}
-
-.social-login ul {
-  list-style-type: none;
-  margin: 30px 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.social-login ul li {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 auto;
-  flex: 1 auto;
-}
-
-.social-login ul li a {
-  background-color: #56385a;
-  border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  color: #e6e6e6;
-  font-weight: bold;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
-
-.social-login ul li a::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px;
-  margin-right: 5px;
-}
-
-.social-login ul li a:hover {
-  background-color: #fff199;
-  color: #0e090e;
-  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-li.google {
-  margin-right: 10px;
-}
-
-li.google a::before {
-  background-image: url("../images/google.png");
-}
-
-li.fb {
-  margin-left: 10px;
-}
-
-li.fb a::before {
-  margin: 0;
-  background-image: url("../images/fb.png");
-}
-
-@media only screen and (max-width: 400px) {
-  .social-login ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  li.google,
-  li.fb {
-    margin: 0;
-  }
-
-  li.google {
-    margin-bottom: 10px;
-  }
-}
-
-._or {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #d9d9d9;
-}
-
-.the-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.the-form label {
-  text-align: right;
-  margin-bottom: 5px;
-  color: #e6e6e6;
-  font-weight: bold;
-  float: left;
-}
-
-.the-form [type="text"],
-.the-form [type="text"] {
-  font-family: 'Cairo', sans-serif;
-  padding: 15px;
-  font-size: 16px;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  margin-bottom: 15px;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-  color: #e6e6e6;
-}
-
-.the-form [type="text"]::-webkit-input-placeholder,
-.the-form [type="text"]::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.the-form [type="text"]::-moz-placeholder,
-.the-form [type="text"]::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.the-form [type="text"]:-ms-input-placeholder,
-.form-container .form-body .the-form [type="text"]:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.the-form [type="text"]::-ms-input-placeholder,
-.form-container .form-body .the-form [type="text"]::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.the-form [type="text"]::placeholder,
-.form-container .form-body .the-form [type="text"]::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.the-form [type="text"]:hover,
-.the-form [type="text"]:hover {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.the-form [type="text"]:focus,
-.the-form [type="text"]:focus {
-  background: #ffffff;
-  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-  border-color: #4a304d;
-  color: #222222;
-}
-
-.the-form [type="text"]:focus::-webkit-input-placeholder,
-.form-container .form-body .the-form [type="text"]:focus::-webkit-input-placeholder {
-  color: #666666;
-}
-
-.the-form [type="text"]:focus::-moz-placeholder,
-.the-form [type="text"]:focus::-moz-placeholder {
-  color: #666666;
-}
-
-.the-form [type="text"]:focus:-ms-input-placeholder,
-.the-form [type="text"]:focus:-ms-input-placeholder {
-  color: #666666;
-}
-
-.the-form [type="text"]:focus::-ms-input-placeholder,
-.the-form [type="text"]:focus::-ms-input-placeholder {
-  color: #666666;
-}
-
-.the-form [type="text"]:focus::placeholder,
-.the-form [type="text"]:focus::placeholder {
-  color: #666666;
-}
-
-.the-form [type="submit"] {
-  width:350px;  font-family: 'Cairo', sans-serif;
-  background: #ffb37b;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 18px;
-  font-size: 20px;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-top: 20px;
-  color: black;
-  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.the-form [type="submit"]:hover {
-  opacity: 0.9;
-}
-
-.form-footer div {
-  text-align: center;
-  padding: 25px 20px;
-  font-size: 18px;
-  color: #e6e6e6;
-}
-
-.form-footer div a {
-  color: #ffb37b;
-}
-.Click-here {
-  text-align: center;
-  width:100%;  font-family: 'Cairo', sans-serif;
-  height: 70px;
-  background: #ffb37b;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 18px;
-  font-size: 20px;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-top: 20px;
-  color: black;
-  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-.Click-here:hover{
-  opacity: 0.9;
-}
-.custom-model-main {
-  text-align: center;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; /* z-index: 1050; */
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear, z-index 0.15;
-  -o-transition: opacity 0.15s linear, z-index 0.15;
-  transition: opacity 0.15s linear, z-index 0.15;
-  z-index: -1;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.model-open {
-  z-index: 99999;
-  opacity: 1;
-  overflow: hidden;
-}
-.custom-model-inner {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  -o-transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  display: inline-block;
-  vertical-align: middle;
-  width: 600px;
-  margin: 30px auto;
-  max-width: 97%;
-}
-.pop-up-content-wrap{
-  color: #0e090e;
-}
-.custom-model-wrap {
-  display: block;
-  width: 100%;
-  position: relative;
-  background-color: rgba(255, 179, 123, 0.9);
-
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  background-clip: padding-box;
-  outline: 0;
-  text-align: right;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-height: calc(100vh - 70px);
-	overflow-y: auto;
-}
-.model-open .custom-model-inner {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  position: relative;
-  z-index: 999;
-}
-.model-open .bg-overlay {
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 99;
-}
-.bg-overlay {
-  background: rgba(0, 0, 0, 0);
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-
-  -webkit-transition: background 0.15s linear;
-  -o-transition: background 0.15s linear;
-  transition: background 0.15s linear;
-}
-.close-btn {
-  position: absolute;
-  right: 1;
-  top: -10px;
-  left: 10px;
-  cursor: pointer;
-  z-index: 200;
-  font-size: 30px;
-  color: rgb(29, 29, 29);
-}
-
-@media screen and (min-width:800px){
-	.custom-model-main:before {
-	  content: "";
-	  display: inline-block;
-	  height: auto;
-	  vertical-align: middle;
-	  margin-right: -0px;
-	  height: 100%;
-	}
-  .example h1 {
-    font-size: 80px;
-  }
-}
-@media screen and (max-width:600px){
-	.custom-model-main:before {
-    font-size: 10px;
-    top: 20%;
-	  content: "";
-	  display: inline-block;
-	  height: auto;
-	  vertical-align: middle;
-	  margin-right: -0px;
-	  height: 100%;
-  
-	}
-  .example h1 {
-    font-size: px;
-  }
-}
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-
-.circle{
-  width: 50px;
-  height: 50px;
-  background-color: brown;
-}
-.heading{
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
-
-  font-size: large;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 10px;
-}
+        <script src="./assets/JS/index.js"></script>
+    
+</body>
+</html>
